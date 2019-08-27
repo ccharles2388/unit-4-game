@@ -1,0 +1,12 @@
+.head{
+    
+    height: 100px;
+    width: 200px
+    
+
+}
+
+body {
+    background-image: url("assets/images/background.jpg");
+    background-color: blue;
+}
