@@ -42,15 +42,21 @@ width: 50px;
 }
 
 #randomNumber {
+    float: left;
     background-color: forestgreen;
     height: 100px;
     width: 150px;
 }
 
 #score {
+    float: left;
     background-color: aqua;
     height: 100px;
     width: 50px;
+}
+
+#buttons {
+    clear: both;
 }
 
 #scoreText {
