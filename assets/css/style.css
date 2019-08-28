@@ -1,10 +1,17 @@
-.head{
-    
-    height: 100px;
-    width: 200px
-    
-
+#headMain{
+    background-color: brown;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    height: 75px;
+    width: 200px;
+}  
+#instructions{
+    background-color: bisque;
+    height: 300px;
+    width: 600px;
 }
+
 
 body {
     background-color: blue;#
@@ -32,4 +39,28 @@ width: 50px;
 height: 50px;
 width: 50px;
 
+}
+
+#randomNumber {
+    background-color: forestgreen;
+    height: 100px;
+    width: 150px;
+}
+
+#score {
+    background-color: aqua;
+    height: 100px;
+    width: 50px;
+}
+
+#scoreText {
+    background-color: forestgreen;
+    height: 30px;
+    width: 150px;
+}
+
+#sumScore {
+    background-color: forestgreen;
+    height: 100px;
+    width: 150px;
 }
