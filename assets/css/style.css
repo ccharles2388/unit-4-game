@@ -44,6 +44,8 @@ width: 50px;
 #randomNumber {
     float: left;
     background-color: forestgreen;
+    padding-top: 15px;
+    padding-left: 10px;
     height: 100px;
     width: 150px;
 }
@@ -51,8 +53,10 @@ width: 50px;
 #score {
     float: left;
     background-color: aqua;
+    padding-top: 15px;
+    padding-left: 10px;
     height: 100px;
-    width: 50px;
+    width: 100px;
 }
 
 #buttons {
@@ -61,12 +65,16 @@ width: 50px;
 
 #scoreText {
     background-color: forestgreen;
-    height: 30px;
-    width: 150px;
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 40px;
+    width: 200px;
 }
 
 #sumScore {
     background-color: forestgreen;
+    padding-top: 15px;
+    padding-left: 10px;
     height: 100px;
     width: 150px;
 }
