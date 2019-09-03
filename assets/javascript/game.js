@@ -73,5 +73,7 @@ $("#reset").on("click", function() {
 c_randomNumber = randomNumberFromRange(19, 120);
 $("#randomNumber").text(c_randomNumber);
 $("#sumScore").text(0);
+wins = 0;
+losses = 0;
 console.log(c_randomNumber);
 })
