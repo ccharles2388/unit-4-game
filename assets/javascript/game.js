@@ -76,7 +76,8 @@ function retry() {
   $("#wins").text(wins);
   $("#losses").text(losses);
   counter = 0;
-  console.log(c_randomNumber);
+  val = Math.floor(Math.random() * numberOptions.length) + 1;
+  $('#crystal' + c).attr('data-crystalvalue', val);
   };
 
 // Reset Logic For User Reset
@@ -87,6 +88,7 @@ $("#sumScore").text(0);
 $("#wins").text(wins);
 $("#losses").text(losses);
 counter = 0;
-console.log(c_randomNumber);
+val = Math.floor(Math.random() * numberOptions.length) + 1;
+  $('#crystal' + c).attr('data-crystalvalue', val);
 
 })
