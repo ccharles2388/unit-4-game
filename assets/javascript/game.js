@@ -1,4 +1,4 @@
-
+// Generated Global Variables
 var wins = 0;
 var losses = 0;
 var c_randomNumber = randomNumberFromRange(19, 120);
