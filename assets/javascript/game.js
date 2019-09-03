@@ -56,24 +56,37 @@ $(".crystal-image").on("click", function () {
     wins++;
     $("#wins").text(wins);
     alert("You win!");
-    
+    retry();
   }
 
   else if (counter >= c_randomNumber) {
     losses++;
     $("#losses").text(losses);
     alert("You lose!!");
-    
+    retry();
   }
 
 }); 
 
-// Reset Logic
+// Reset Logic When User Wins Or Losses A Game Reset
+function retry() {
+  c_randomNumber = randomNumberFromRange(19, 120);
+  $("#randomNumber").text(c_randomNumber);
+  $("#sumScore").text(0);
+  $("#wins").text(wins);
+  $("#losses").text(losses);
+  counter = 0;
+  console.log(c_randomNumber);
+  };
+
+// Reset Logic For User Reset
 $("#reset").on("click", function() {
 c_randomNumber = randomNumberFromRange(19, 120);
 $("#randomNumber").text(c_randomNumber);
 $("#sumScore").text(0);
-wins = 0;
-losses = 0;
+$("#wins").text(wins);
+$("#losses").text(losses);
+counter = 0;
 console.log(c_randomNumber);
+
 })
