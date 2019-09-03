@@ -39,8 +39,6 @@ for (var c = 1; c < 5; c++) {
   $('#crystal' + c).attr('data-crystalvalue', val)
 }
 
-
-
 // This time, our click event applies to every single crystal on the page. Not just one.
 $(".crystal-image").on("click", function () {
 
