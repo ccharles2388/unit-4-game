@@ -32,7 +32,7 @@ var counter = 0;
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 for (var c = 1; c < 5; c++) {
-  // get a numb er at random from numberOptions
+  // get a number at random from numberOptions
   var val = Math.floor(Math.random() * numberOptions.length) +1;
  
   console.log(val)
