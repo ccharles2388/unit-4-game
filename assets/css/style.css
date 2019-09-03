@@ -47,8 +47,9 @@ width: 50px;
 #randomNumber {
     float: left;
     background-color: forestgreen;
-    padding-top: 15px;
-    padding-left: 10px;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
     height: 100px;
     width: 150px;
 }
@@ -76,8 +77,9 @@ width: 50px;
 
 #sumScore {
     background-color: forestgreen;
-    padding-top: 15px;
-    padding-left: 10px;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
     height: 100px;
     width: 150px;
 }
