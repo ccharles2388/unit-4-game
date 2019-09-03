@@ -11,16 +11,19 @@
 // console.log (generateRandom(1,12));
 
 // Created The Computer Random Number With A Min And Max Global VAr
-var c_minNumber = 19;
-var c_maxNumber = 120;
-
-var c_randomNumber = randomNumberFromRange(c_minNumber, c_maxNumber);
+// var c_minNumber = 19;
+// var c_maxNumber = 120;
+var wins = 0;
+var losses = 0;
+var c_randomNumber = randomNumberFromRange(19, 120);
 
 function randomNumberFromRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 console.log(c_randomNumber);
+
+// Display Random Number
 
 $("#randomNumber").text(c_randomNumber);
 
@@ -57,18 +60,30 @@ $(".crystal-image").on("click", function () {
   console.log(counter);
 
   // All of the same game win-lose logic applies. So the rest remains unchanged.
-  alert("New score: " + counter);
+  console.log("New score: " + counter);
 
   // Show Total Sum Of Score After Crystals Are Selected
   $("#sumScore").text(counter);
 
   //  If Logic To Determine If User Wins Or Loses
   if (counter === c_randomNumber) {
+    wins++;
+    $("#wins").text(wins);
     alert("You win!");
+    
   }
 
   else if (counter >= c_randomNumber) {
+    losses++;
+    $("#losses").text(losses);
     alert("You lose!!");
+    
   }
 
 }); 
+$("#reset").on("click", function() {
+c_randomNumber = randomNumberFromRange(19, 120);
+$("#randomNumber").text(c_randomNumber);
+$("#sumScore").text(0);
+console.log(c_randomNumber);
+})
