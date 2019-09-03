@@ -7,7 +7,7 @@ function randomNumberFromRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-console.log(c_randomNumber);
+// console.log(c_randomNumber);
 
 // Display Random Number
 
@@ -24,7 +24,7 @@ for (var c = 1; c < 5; c++) {
   // get a number at random from numberOptions
   var val = Math.floor(Math.random() * numberOptions.length) + 1;
 
-  console.log(val)
+  // console.log(val)
   $('#crystal' + c).attr('data-crystalvalue', val)
 }
 
@@ -43,10 +43,10 @@ $(".crystal-image").on("click", function () {
   counter += crystalValue;
 
   // Log Counter Score To Console
-  console.log(counter);
+  // console.log(counter);
 
   // All of the same game win-lose logic applies. So the rest remains unchanged.
-  console.log("New score: " + counter);
+  // console.log("New score: " + counter);
 
   // Show Total Sum Of Score After Crystals Are Selected
   $("#sumScore").text(counter);
