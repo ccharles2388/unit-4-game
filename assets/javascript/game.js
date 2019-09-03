@@ -1,18 +1,4 @@
 
-// var randomNumber = ( Math.floor((Math.random() * 100) + 1))+19;
-// var generateRandom = function(min, max) {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-//   };
-
-// $("#randomNumber").text(generateRandom(19,120));
-// console.log (generateRandom(19,120));
-
-// $("#crystal1").text(generateRandom(1,12));
-// console.log (generateRandom(1,12));
-
-// Created The Computer Random Number With A Min And Max Global VAr
-// var c_minNumber = 19;
-// var c_maxNumber = 120;
 var wins = 0;
 var losses = 0;
 var c_randomNumber = randomNumberFromRange(19, 120);
@@ -81,6 +67,8 @@ $(".crystal-image").on("click", function () {
   }
 
 }); 
+
+// Reset Logic
 $("#reset").on("click", function() {
 c_randomNumber = randomNumberFromRange(19, 120);
 $("#randomNumber").text(c_randomNumber);
